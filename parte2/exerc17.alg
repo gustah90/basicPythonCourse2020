@@ -1,42 +1,24 @@
 #Faça um programa que simula o placar de um jogo de basquete. Não vale ponto e nao é obrigado fazer.
 
 print('PARTIDA DE BASQUETE')
-a=input('Time 1: ')
-b=input('Time 2: ')
-f='Falta'
-d='Dentro da linha'
-s='Fora da linha'
-tempo=1
-while(tempo<=10): 
-  tempo=tempo+1
-  if(a==0 and b==0): 
-    print('Placar Inicial')
-  elif(f==1):  
-    print('Falta= ',(f))
-  elif(d==2):  
-    print('Dentro da linha de 3= ',(d))
-  elif(s==3):  
-    print('Fora da linha de 3= ',(s))
-  pa='Placar 1º Time'
-  pb='Placar 2º Time'
-  p1=int(input('Pontos 1º Time: '))
-  p2=int(input('Pontos 2º Time: '))
-  while(pb==p1+p1 and p2==p2+p2): 
-    print((a),(pa),(' X '),(pb),(b))
-  print((p1),('PLACAR FINAL'),(p2))
-  if(p1>p2):  
-    print((a),('Campeão!')
-  elif(p2>p1):
-    print((b),('Campeão!'))
+tempo_final=int(input("Tempo de duração da partida: "))
+tempo_inicial=1
+soma1=0
+soma2=0
+print('INÍCIO DE PARTIDA')
+while(tempo_inicial<=tempo_final): 
+  time=int(input('Time 1 ou 2: '))
+  ponto=int(input('1, 2 ou 3 pontos: ' ))
+  tempo_inicial=tempo_inicial+1
+  if(time==1):
+    soma1 = soma1 + ponto
   else:
-    print('EMPATE!')
+    soma2 = soma2 + ponto
+if(soma1>soma2):  
+  print('Time 1 Campeão!')
+elif(soma2>soma1):  
+  print('Time 2 Campeão!')
+else: 
+  print('EMPATE!')
 print('FIM DE PARTIDA')
-
-
-if(p1>p2):  
-    print((a),('Campeão!')
-   elif(p2>p1):  
-    print((b),('Campeão!'))
-   else:
-    print('EMPATE!')
-print('FIM DE PARTIDA')
+print((soma1),('PLACAR FINAL'),(soma2))
