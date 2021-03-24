@@ -5,6 +5,12 @@ programa ao final mostra o candidato vencedor. Os candidatos são:
 • Sandra - 99
 O programa acaba quando for digitado o voto de numero zero.
 
+02.  Altere o programa para mostrar:
+• O numero de votos em branco e o numero de votos nulo
+• Mostrar o numero de votos de cada candidato
+• O candidato vencedor agora so  sera possível com 51% dos totais de votos
+• Mostrar a diferença percentual entre o candidato vencedor e o segundo colocado.
+
 print('RENATA: 77 ', ' MARCOS: 33 ', ' SANDRA: 99 ', ' BRANCO: b ',' NULO: n')
 print('Digite fim quando concluir')
 n=input('Escolha seu candidato: ')    
